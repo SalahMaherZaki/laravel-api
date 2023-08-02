@@ -18,7 +18,7 @@ return new class extends Migration
                 ->references('id')
                 ->on('products')
                 ->onDelete('cascade');
-            $table->string('customer');
+            $table->string('customer', 255);
             $table->text('review');
             $table->integer('star');
             $table->timestamps();

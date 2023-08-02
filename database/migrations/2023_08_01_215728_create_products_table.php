@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('detail');
+            $table->string('name', 255);
+            $table->string('detail', 255);
             $table->double('price');
             $table->integer('stock');
             $table->double('discount');
